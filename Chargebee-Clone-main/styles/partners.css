@@ -1,0 +1,275 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#partners {
+    height: 300px;
+    width: 100%;
+    border: 1px solid transparent;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(31, 31, 138);
+    color: white;
+}
+
+#partners>h1 {
+    font-size: 60px;
+}
+
+#partners>p {
+    width: 50%;
+    margin-left: 27%;
+}
+
+#payment {
+    height: 400px;
+    width: 55%;
+    /* border: 1px solid teal; */
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#payment>button {
+    margin-top: 20px;
+    background-color: rgb(52, 102, 240);
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-size: larger;
+}
+
+#payment>h1 {
+    font-size: 40px;
+}
+
+#payment>p {
+    margin-top: 30px;
+    line-height: 25px;
+    color: gray;
+    font-size: 18px;
+}
+
+#cyber {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 180px);
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 50px;
+    text-align: center;
+}
+
+#cyber>div {
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#cyber>div>img {
+    text-align: center;
+    width: 50%;
+    margin-top: 70px;
+}
+
+.h1 {
+    text-align: center;
+    color: purple;
+}
+
+#independent {
+    height: 400px;
+    width: 55%;
+    /* border: 1px solid red; */
+    margin: auto;
+    text-align: center;
+}
+
+#independent>button {
+    margin-top: 30px;
+    background-color: rgb(52, 102, 240);
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-size: larger;
+}
+
+#independent>h1 {
+    font-size: 40px;
+}
+
+#independent>p {
+    margin-top: 30px;
+    line-height: 25px;
+    color: gray;
+    font-size: 18px;
+}
+
+#xero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 180px);
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    gap: 50px;
+    text-align: center;
+}
+
+#xero>div {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#xero>div>img {
+    text-align: center;
+    width: 40%;
+    margin-top: 70px;
+}
+
+#channel {
+    height: auto;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#channel>h1 {
+    font-size: 40px;
+}
+
+#channel>p {
+    margin-top: 30px;
+    line-height: 25px;
+    color: gray;
+    font-size: 18px;
+}
+
+#aws {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 180px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    gap: 50px;
+    text-align: center;
+}
+
+#aws>div {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#aws>div>img {
+    width: 40%;
+    margin-top: 50px;
+}
+
+#sell {
+    height: auto;
+    width: 60%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#sell>h1 {
+    font-size: 40px;
+}
+
+#sell>p {
+    line-height: 26px;
+    color: grey;
+}
+
+#gain {
+    display: flex;
+    height: auto;
+    width: 100%;
+
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#gain>div {
+    height: 100%;
+    width: 30%;
+
+    margin: auto;
+}
+
+#gain>div>img {
+    width: 25%;
+    margin-top: 15px;
+}
+
+#gain>div>p {
+    color: grey;
+    line-height: 26px;
+}
+
+#btn {
+    margin-left: 42%;
+    margin-top: 30px;
+    background-color: rgb(52, 102, 240);
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-size: larger;
+}
+
+#market {
+    height: auto;
+    width: 60%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#market>h1 {
+    font-size: 39px;
+}
+
+#market>p {
+    line-height: 26px;
+    color: grey;
+}
+
+#market>button {
+    background-color: rgb(52, 102, 240);
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-size: larger;
+}
+
+#market_ad {
+    display: flex;
+    /* height: 150px; */
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 50px auto 100px auto;
+    /* margin-top: 3rem; */
+    /* margin-bottom: 100px; */
+}
+
+#market_ad>div {
+    height: 100%;
+    width: 18%;
+    /* border: 1px solid teal; */
+    margin: auto;
+}
+
+#market_ad>div>img {
+    width: 70%;
+}

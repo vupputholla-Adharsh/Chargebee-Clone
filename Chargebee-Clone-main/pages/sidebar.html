@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/sidebar.css">
+</head>
+
+<body>
+    <div id="side-bar">
+        <div id="logo-Section">
+            <img id="logo" src="../images/man.png" alt="">
+            <div id="details">
+            </div>
+        </div>
+        <input id="search" type="text" placeholder="Go to" oninput="sidebar_search()" onemptied="sidebar_home()">
+        <div id="side-bar-tools">
+            <div class="sidebar_quickguide" onclick="get_started()">
+                <p>Quick Start Guide</p>
+            </div>
+            <div class="sidebar_home" onclick="sidebar_home()">
+                <p>Home</p>
+            </div>
+            <div class="sidebar_customer" onclick="sidebar_customer()">
+                <p>Customer</p>
+            </div>
+            <div class="sidebar_subs" onclick="sidebar_subs()">
+                <p>Subscriptions</p>
+            </div>
+
+
+            <div onclick="invoice()" class="invoice">
+                <p id="invoice_Credit">Invoices & Credit Notes</p>
+                <p id="invoice_button">+</p>
+            </div>
+            <div id="invoice_empty"></div>
+
+            <div onclick="catalog()" class="catalog">
+                <p id="prod_catalog">Product Catalog</p>
+                <p id="prod_button">+</p>
+            </div>
+            <div id="prod_empty"></div>
+
+            <div onclick="entitle()" class="entitle">
+                <p id="entitle">Entitlements</p>
+                <p id="entitle_button">+</p>
+            </div>
+            <div id="entitle_empty"></div>
+
+            <div onclick="logs()" class="logs">
+                <p id="logs">Logs</p>
+                <p id="logs_button">+</p>
+            </div>
+            <div id="logs_empty"></div>
+
+            <div onclick="rev()" class="rev">
+                <p id="rev">RevenueStory</p>
+                <p id="rev_button">+</p>
+            </div>
+            <div id="rev_empty"></div>
+            <div class="sidebar_report">
+                <p>Classic Reports</p>
+            </div>
+            <div class="sidebar_app" onclick="myapp()">
+                <p>Apps</p>
+            </div>
+
+            <div onclick="set()" class="set">
+                <p id="set">Settings</p>
+            </div>
+
+            <button id="log_out" onclick="logout()">Log out</button>
+        </div>
+
+
+    </div>
+    <button id="open-sideBar" onclick="change_size()">
+        < </button>
+
+            <div id="main">
+                <div id="sub-main-1">
+                    <iframe width="200" height="125" style="margin-left: 20px;"
+                        src="https://www.youtube.com/embed/u83QbjCb_JY">
+                    </iframe>
+                    <div style="margin-left:20px ; ">
+                        <h3>What can Chargify do for you?</h3>
+                        <p>Launch and automate your subscription business with Chargify <br> invoicing, payment
+                            recovery, pricing management, and more. Focus on the growth, <br> and we'll handle the rest.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id="sub-main-2">
+                    <div style="margin-left:20px ; ">
+                        <h3>Explore Chargify</h3>
+                        <div style="display: flex;">
+                            <button
+                                style="border-radius: 50px;background-color: rgb(107, 48, 188);margin-right: 5px;border-radius: 50px;height: 20px;width: 20px; border: 0;"></button>
+                            <button
+                                style="border-radius: 50px;background-color: rgb(107, 107, 107);margin-right: 5px;border-radius: 50px;height: 20px;width: 20px; border: 0;"></button>
+                            <button
+                                style="border-radius: 50px;background-color: rgb(107, 107, 107);margin-right: 5px;border-radius: 50px;height: 20px;width: 20px; border: 0;"></button>
+                            <button
+                                style="border-radius: 50px;background-color: rgb(107, 107, 107);margin-right: 5px;border-radius: 50px;height: 20px;width: 20px; border: 0;"></button>
+                            <button
+                                style="border-radius: 50px;background-color: rgb(107, 107, 107);margin-right: 5px;border-radius: 50px;height: 20px;width: 20px; border: 0;"></button>
+                        </div>
+                        <h3>Give it a try!</h3>
+                        <p>Welcome to your test site. This is a space for you to play <br> around and get an idea of how
+                            Chargify can work for you.</p>
+                        <p>Interact with the essential elements of Chargify and see how <br> they come together to make
+                            subscription magic happen. Experiment <br> away, everything is flexible here.</p>
+                        <button onclick="submain2()"
+                            style="background-color: rgb(107, 48, 188);color: white;padding: 5px 10px 5px 10px;border: 0; border-radius: 5px;cursor: pointer;">Lets
+                            Go!</button>
+                    </div>
+                    <img id="imagery" height="400px"
+                        src="https://dgkxwewtzsnml.cloudfront.net/static/app-static-assets/cb-vue/cb-vue-2022.12.15-11.40/images/cb-aha-moment-intro.png"
+                        alt="">
+                </div>
+                <div id="sub-main-3">
+                    <div>
+                        <h4>Total MRP</h4>
+                        <h2>Rs.84,920</h2>
+                    </div>
+                    <div>
+                        <h4>Total Active Subscriptions</h4>
+                        <h2>1,702</h2>
+                    </div>
+                    <div>
+                        <h4>Net Billing</h4>
+                        <h2>Rs.198,805</h2>
+                    </div>
+                    <div>
+                        <h4>Net Payments</h4>
+                        <h2>Rs.194,800</h2>
+                    </div>
+                    <div>
+                        <h4>Unpaid Invoices</h4>
+                        <h2>Rs.2,340</h2>
+                    </div>
+                </div>
+                <div id="buttons_home">
+                    <button id="daily" onclick="daily()">Daily</button>
+                    <button id="month_3" onclick="month_3()">3 Months</button>
+                    <button id="month_6" onclick="month_6()">6 Months</button>
+                    <button id="month_12" onclick="month_12()">12 Months</button>
+                </div>
+
+                <div class="graph">
+                    <img src="../images/graph_1.png" alt="">
+                    <img src="../images/graph_2.png" alt="">
+                    <img src="../images/graph_3.png" alt="">
+                    <img src="../images/graph_4.png" alt="">
+                    <img src="../images/graph_5.png" alt="">
+                    <img src="../images/graph_6.png" alt="">
+                    <img src="../images/graph_7.png" alt="">
+                    <img src="../images/graph_8.png" alt="">
+                    <img src="../images/graph_9.png" alt="">
+                    <img src="../images/graph_10.png" alt="">
+                </div>
+            </div>
+</body>
+
+</html>
+<script src="../script/sidebar.js"></script>
